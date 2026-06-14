@@ -6,84 +6,6 @@
 
 从 Xcode 27 导出的 Skills。
 
-## ios-asset-exporter-plugin.zip
-
-Figma 本地插件包，用于把选中的图标、组件实例或 Frame 一键导出为 iOS 使用的 `@2x` / `@3x` PNG，并在本地打包成 ZIP 下载。适合从 Figma 快速交付 iOS 工程里的切图资源。
-
-包内关键结构：
-
-- `manifest.json`：Figma 插件 manifest，声明插件名称、入口文件、菜单命令、编辑器类型和网络访问策略。
-- `code.js`：插件主逻辑，负责读取当前选中图层、按图层名生成文件名，并调用 Figma 导出 API 生成 `@2x` / `@3x` PNG。
-- `ui.html`：插件窗口 UI，负责展示当前选中状态、触发导出，以及在本地生成 ZIP 下载。
-- `README.md`：插件自身的安装和使用说明。
-
-安装后，它会作为 `iOS Asset Exporter` 出现在 Figma 的本地开发插件中。
-
-### 1. 解压插件
-
-把 `ios-asset-exporter-plugin.zip` 解压到你想保存插件的位置，例如：
-
-```bash
-mkdir -p ~/Documents/FigmaPlugins
-unzip ios-asset-exporter-plugin.zip -d ~/Documents/FigmaPlugins
-```
-
-解压后应该能看到：
-
-```text
-~/Documents/FigmaPlugins/ios-asset-exporter/
-  manifest.json
-  code.js
-  ui.html
-  README.md
-```
-
-### 2. 导入 Figma 本地插件
-
-打开 Figma 桌面端，进入：
-
-```text
-Plugins -> Development -> Import plugin from manifest...
-```
-
-选择解压目录下的：
-
-```text
-~/Documents/FigmaPlugins/ios-asset-exporter/manifest.json
-```
-
-### 3. 使用方式
-
-在 Figma 画布中选中一个或多个图标、组件实例或 Frame，然后运行：
-
-```text
-iOS Asset Exporter -> Export selected ZIP
-```
-
-也可以运行：
-
-```text
-iOS Asset Exporter -> Open exporter window
-```
-
-打开窗口后点击 `导出 ZIP`。
-
-单个图标会按图层名导出。假设图层名是 `切换身份icon`，会导出：
-
-```text
-切换身份icon@2x.png
-切换身份icon@3x.png
-```
-
-选中多个图标时，会按图层名分别导出。文件名中的 `/ \ : * ? " < > |` 会自动替换成 `_`，同名图层会自动追加序号避免覆盖。
-
-插件包含的主要能力：
-
-- 一次选中多个 Figma 图层并批量导出
-- 自动生成 iOS 常用的 `@2x` / `@3x` PNG 文件
-- 按图层名命名导出资源，并清理不适合作为文件名的字符
-- 在插件 UI 内生成 ZIP，不依赖外部网络服务
-
 ## ios-27-xcode-skills-plugin.zip
 
 这是基于 `xcode-skills.zip` 中的 skills 资源封装而成的 Codex 个人插件包，把里面的技能内容整理为 Codex 插件规范所需的目录结构，并补充插件元信息与展示资源，方便在 Codex 插件页中安装、启用和分享。
@@ -196,3 +118,81 @@ mkdir -p ~/.agents/plugins
 - Xcode 安全构建设置审查
 - C `-fbounds-safety` 迁移与调试
 - iOS 真机/模拟器 UI 行为验证
+
+## ios-asset-exporter-plugin.zip
+
+Figma 本地插件包，用于把选中的图标、组件实例或 Frame 一键导出为 iOS 使用的 `@2x` / `@3x` PNG，并在本地打包成 ZIP 下载。适合从 Figma 快速交付 iOS 工程里的切图资源。
+
+包内关键结构：
+
+- `manifest.json`：Figma 插件 manifest，声明插件名称、入口文件、菜单命令、编辑器类型和网络访问策略。
+- `code.js`：插件主逻辑，负责读取当前选中图层、按图层名生成文件名，并调用 Figma 导出 API 生成 `@2x` / `@3x` PNG。
+- `ui.html`：插件窗口 UI，负责展示当前选中状态、触发导出，以及在本地生成 ZIP 下载。
+- `README.md`：插件自身的安装和使用说明。
+
+安装后，它会作为 `iOS Asset Exporter` 出现在 Figma 的本地开发插件中。
+
+### 1. 解压插件
+
+把 `ios-asset-exporter-plugin.zip` 解压到你想保存插件的位置，例如：
+
+```bash
+mkdir -p ~/Documents/FigmaPlugins
+unzip ios-asset-exporter-plugin.zip -d ~/Documents/FigmaPlugins
+```
+
+解压后应该能看到：
+
+```text
+~/Documents/FigmaPlugins/ios-asset-exporter/
+  manifest.json
+  code.js
+  ui.html
+  README.md
+```
+
+### 2. 导入 Figma 本地插件
+
+打开 Figma 桌面端，进入：
+
+```text
+Plugins -> Development -> Import plugin from manifest...
+```
+
+选择解压目录下的：
+
+```text
+~/Documents/FigmaPlugins/ios-asset-exporter/manifest.json
+```
+
+### 3. 使用方式
+
+在 Figma 画布中选中一个或多个图标、组件实例或 Frame，然后运行：
+
+```text
+iOS Asset Exporter -> Export selected ZIP
+```
+
+也可以运行：
+
+```text
+iOS Asset Exporter -> Open exporter window
+```
+
+打开窗口后点击 `导出 ZIP`。
+
+单个图标会按图层名导出。假设图层名是 `切换身份icon`，会导出：
+
+```text
+切换身份icon@2x.png
+切换身份icon@3x.png
+```
+
+选中多个图标时，会按图层名分别导出。文件名中的 `/ \ : * ? " < > |` 会自动替换成 `_`，同名图层会自动追加序号避免覆盖。
+
+插件包含的主要能力：
+
+- 一次选中多个 Figma 图层并批量导出
+- 自动生成 iOS 常用的 `@2x` / `@3x` PNG 文件
+- 按图层名命名导出资源，并清理不适合作为文件名的字符
+- 在插件 UI 内生成 ZIP，不依赖外部网络服务
