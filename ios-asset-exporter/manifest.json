@@ -1,0 +1,27 @@
+{
+  "name": "iOS Asset Exporter",
+  "id": "1519123456789000000",
+  "api": "1.0.0",
+  "main": "code.js",
+  "ui": "ui.html",
+  "documentAccess": "dynamic-page",
+  "networkAccess": {
+    "allowedDomains": ["none"]
+  },
+  "editorType": ["figma", "dev"],
+  "capabilities": ["inspect"],
+  "menu": [
+    {
+      "name": "Export selected ZIP",
+      "command": "export-now"
+    },
+    {
+      "name": "Open exporter window",
+      "command": "open-window"
+    },
+    {
+      "name": "Test plugin startup",
+      "command": "diagnose"
+    }
+  ]
+}

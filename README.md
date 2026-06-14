@@ -123,6 +123,8 @@ mkdir -p ~/.agents/plugins
 
 Figma 本地插件包，用于把选中的图标、组件实例或 Frame 一键导出为 iOS 使用的 `@2x` / `@3x` PNG，并在本地打包成 ZIP 下载。适合从 Figma 快速交付 iOS 工程里的切图资源。
 
+<img src="https://github.com/Rogue24/JPCover/raw/master/ShareTools/example.jpeg" width="60%">
+
 包内关键结构：
 
 - `manifest.json`：Figma 插件 manifest，声明插件名称、入口文件、菜单命令、编辑器类型和网络访问策略。
