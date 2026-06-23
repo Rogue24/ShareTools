@@ -8,13 +8,13 @@
 
 | 技能 | 用途 |
 |---|---|
-| [audit-xcode-security-settings](/Users/aa/Desktop/JPKit/ShareTools/skills/xcode-skills/audit-xcode-security-settings/SKILL.md) | 审计并加强 Xcode 项目的安全构建配置，包括编译器警告、静态分析、Enhanced Security 和相关 entitlements。不负责 ATS/TLS、代码签名和隐私 API。 |
-| [c-bounds-safety](/Users/aa/Desktop/JPKit/ShareTools/skills/xcode-skills/c-bounds-safety/SKILL.md) | 帮助 C 项目采用和调试 `-fbounds-safety`：添加指针边界注解、配置编译选项、处理编译错误，以及排查越界运行时崩溃。 |
-| [device-interaction](/Users/aa/Desktop/JPKit/ShareTools/skills/xcode-skills/device-interaction/SKILL.md) | 在真机或模拟器上启动应用，通过截图、UI 层级和点击操作验证功能，适合检查页面显示、按钮交互、布局和触摸问题。 |
-| [swiftui-specialist](/Users/aa/Desktop/JPKit/ShareTools/skills/xcode-skills/swiftui-specialist/SKILL.md) | 通用 SwiftUI 专家指南。用于编写、重构和审查 SwiftUI，覆盖视图拆分、数据流、Environment、Modifier、本地化、动画、`ForEach` 和过时 API。 |
-| [swiftui-whats-new-27](/Users/aa/Desktop/JPKit/ShareTools/skills/xcode-skills/swiftui-whats-new-27/SKILL.md) | 专门处理 SDK 27 的 SwiftUI 新 API和兼容性变化，例如 `@State` 宏迁移、拖拽排序、任意容器侧滑操作、工具栏、图片缓存、文档应用及废弃 API。 |
-| [test-modernizer](/Users/aa/Desktop/JPKit/ShareTools/skills/xcode-skills/test-modernizer/SKILL.md) | 把现有 XCTest 迁移到 Swift Testing，或改进已有 Swift Testing 测试，包括断言、异步测试、参数化测试、跳过条件、并发和附件。不适用于 XCUI UI 自动化测试。 |
-| [uikit-app-modernization](/Users/aa/Desktop/JPKit/ShareTools/skills/xcode-skills/uikit-app-modernization/SKILL.md) | 现代化 UIKit 项目，使其适配多窗口和动态尺寸。重点替换 `UIScreen.main`、旧方向判断、AppDelegate 生命周期和不正确的 Safe Area 假设，支持 Swift 与 Objective-C。 |
+| [audit-xcode-security-settings](skills/xcode-skills/audit-xcode-security-settings/SKILL.md) | 审计并加强 Xcode 项目的安全构建配置，包括编译器警告、静态分析、Enhanced Security 和相关 entitlements。不负责 ATS/TLS、代码签名和隐私 API。 |
+| [c-bounds-safety](skills/xcode-skills/c-bounds-safety/SKILL.md) | 帮助 C 项目采用和调试 `-fbounds-safety`：添加指针边界注解、配置编译选项、处理编译错误，以及排查越界运行时崩溃。 |
+| [device-interaction](skills/xcode-skills/device-interaction/SKILL.md) | 在真机或模拟器上启动应用，通过截图、UI 层级和点击操作验证功能，适合检查页面显示、按钮交互、布局和触摸问题。 |
+| [swiftui-specialist](skills/xcode-skills/swiftui-specialist/SKILL.md) | 通用 SwiftUI 专家指南。用于编写、重构和审查 SwiftUI，覆盖视图拆分、数据流、Environment、Modifier、本地化、动画、`ForEach` 和过时 API。 |
+| [swiftui-whats-new-27](skills/xcode-skills/swiftui-whats-new-27/SKILL.md) | 专门处理 SDK 27 的 SwiftUI 新 API和兼容性变化，例如 `@State` 宏迁移、拖拽排序、任意容器侧滑操作、工具栏、图片缓存、文档应用及废弃 API。 |
+| [test-modernizer](skills/xcode-skills/test-modernizer/SKILL.md) | 把现有 XCTest 迁移到 Swift Testing，或改进已有 Swift Testing 测试，包括断言、异步测试、参数化测试、跳过条件、并发和附件。不适用于 XCUI UI 自动化测试。 |
+| [uikit-app-modernization](skills/xcode-skills/uikit-app-modernization/SKILL.md) | 现代化 UIKit 项目，使其适配多窗口和动态尺寸。重点替换 `UIScreen.main`、旧方向判断、AppDelegate 生命周期和不正确的 Safe Area 假设，支持 Swift 与 Objective-C。 |
 
 ## ios-27-xcode-skills-plugin
 
