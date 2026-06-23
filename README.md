@@ -2,32 +2,35 @@
 
 个人分享的一些工具。
 
-## xcode-skills.zip
+## xcode-skills
 
-从 Xcode 27 导出的 Skills。
+从 Xcode 27 导出的官方 Skills。
 
-## ios-27-xcode-skills-plugin.zip
+| 技能 | 用途 |
+|---|---|
+| [audit-xcode-security-settings](/Users/aa/Desktop/JPKit/ShareTools/skills/xcode-skills/audit-xcode-security-settings/SKILL.md) | 审计并加强 Xcode 项目的安全构建配置，包括编译器警告、静态分析、Enhanced Security 和相关 entitlements。不负责 ATS/TLS、代码签名和隐私 API。 |
+| [c-bounds-safety](/Users/aa/Desktop/JPKit/ShareTools/skills/xcode-skills/c-bounds-safety/SKILL.md) | 帮助 C 项目采用和调试 `-fbounds-safety`：添加指针边界注解、配置编译选项、处理编译错误，以及排查越界运行时崩溃。 |
+| [device-interaction](/Users/aa/Desktop/JPKit/ShareTools/skills/xcode-skills/device-interaction/SKILL.md) | 在真机或模拟器上启动应用，通过截图、UI 层级和点击操作验证功能，适合检查页面显示、按钮交互、布局和触摸问题。 |
+| [swiftui-specialist](/Users/aa/Desktop/JPKit/ShareTools/skills/xcode-skills/swiftui-specialist/SKILL.md) | 通用 SwiftUI 专家指南。用于编写、重构和审查 SwiftUI，覆盖视图拆分、数据流、Environment、Modifier、本地化、动画、`ForEach` 和过时 API。 |
+| [swiftui-whats-new-27](/Users/aa/Desktop/JPKit/ShareTools/skills/xcode-skills/swiftui-whats-new-27/SKILL.md) | 专门处理 SDK 27 的 SwiftUI 新 API和兼容性变化，例如 `@State` 宏迁移、拖拽排序、任意容器侧滑操作、工具栏、图片缓存、文档应用及废弃 API。 |
+| [test-modernizer](/Users/aa/Desktop/JPKit/ShareTools/skills/xcode-skills/test-modernizer/SKILL.md) | 把现有 XCTest 迁移到 Swift Testing，或改进已有 Swift Testing 测试，包括断言、异步测试、参数化测试、跳过条件、并发和附件。不适用于 XCUI UI 自动化测试。 |
+| [uikit-app-modernization](/Users/aa/Desktop/JPKit/ShareTools/skills/xcode-skills/uikit-app-modernization/SKILL.md) | 现代化 UIKit 项目，使其适配多窗口和动态尺寸。重点替换 `UIScreen.main`、旧方向判断、AppDelegate 生命周期和不正确的 Safe Area 假设，支持 Swift 与 Objective-C。 |
 
-这是基于 `xcode-skills.zip` 中的 skills 资源封装而成的 Codex 个人插件包，把里面的技能内容整理为 Codex 插件规范所需的目录结构，并补充插件元信息与展示资源，方便在 Codex 插件页中安装、启用和分享。
+## ios-27-xcode-skills-plugin
+
+这是基于 `xcode-skills` 中的 skills 资源封装而成的 Codex 个人插件包，把里面的技能内容整理为 Codex 插件规范所需的目录结构，并补充插件元信息与展示资源，方便在 Codex 插件页中安装、启用和分享。
 
 包内关键结构：
 
 - `.codex-plugin/plugin.json`：Codex 插件 manifest，声明插件名称、版本、展示信息、图标、默认提示词，以及 skills 入口。
-- `skills/`：从 `xcode-skills.zip` 归档进来的技能主体内容，包含 iOS 27 / Xcode beta 适配相关的 skill 定义、工作流和参考资料。
+- `skills/`：属于 `xcode-skills` 的技能主体内容，包含 iOS 27 / Xcode beta 适配相关的 skill 定义、工作流和参考资料。
 - `assets/`：插件展示资源，例如 `logo` / `composerIcon` 使用的图标文件。
 
 安装完成后，它会作为 `ios-27-xcode-skills@personal` 出现在 Codex 的个人插件中。
 
-### 1. 解压插件
+### 1. 保存插件
 
-把 `ios-27-xcode-skills-plugin.zip` 解压到你想保存插件的位置，例如：
-
-```bash
-mkdir -p ~/Documents/CodexPlugins
-unzip ios-27-xcode-skills-plugin.zip -d ~/Documents/CodexPlugins
-```
-
-解压后应该能看到：
+把 `ios-27-xcode-skills-plugin` 放到你想保存插件的位置，例如放到`~/Documents/CodexPlugins/`，能看到插件文件：
 
 ```text
 ~/Documents/CodexPlugins/ios-27-xcode-skills/
@@ -119,7 +122,7 @@ mkdir -p ~/.agents/plugins
 - C `-fbounds-safety` 迁移与调试
 - iOS 真机/模拟器 UI 行为验证
 
-## ios-asset-exporter-plugin.zip
+## ios-asset-exporter-plugin
 
 Figma 本地插件包，用于把选中的图标、组件实例或 Frame 一键导出为 iOS 使用的 `@2x` / `@3x` PNG，并在本地打包成 ZIP 下载。适合从 Figma 快速交付 iOS 工程里的切图资源。
 
@@ -134,16 +137,9 @@ Figma 本地插件包，用于把选中的图标、组件实例或 Frame 一键�
 
 安装后，它会作为 `iOS Asset Exporter` 出现在 Figma 的本地开发插件中。
 
-### 1. 解压插件
+### 1. 保存插件
 
-把 `ios-asset-exporter-plugin.zip` 解压到你想保存插件的位置，例如：
-
-```bash
-mkdir -p ~/Documents/FigmaPlugins
-unzip ios-asset-exporter-plugin.zip -d ~/Documents/FigmaPlugins
-```
-
-解压后应该能看到：
+把 `ios-asset-exporter-plugin` 放到你想保存插件的位置，例如放到`~/Documents/FigmaPlugins/`，能看到插件文件：
 
 ```text
 ~/Documents/FigmaPlugins/ios-asset-exporter/
