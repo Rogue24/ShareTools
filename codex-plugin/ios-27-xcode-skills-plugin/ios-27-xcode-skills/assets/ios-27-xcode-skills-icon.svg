@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="iOS 27">
+  <defs>
+    <linearGradient id="bg" x1="78" y1="456" x2="430" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#007AFF"/>
+      <stop offset="0.48" stop-color="#32ADE6"/>
+      <stop offset="1" stop-color="#BFECFF"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="74" y1="26" x2="438" y2="330" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.55"/>
+      <stop offset="0.42" stop-color="#FFFFFF" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="softText" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#0050A8" flood-opacity="0.20"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <rect width="512" height="512" rx="112" fill="url(#shine)"/>
+  <path d="M64 75c86-43 254-43 384 13" fill="none" stroke="#FFFFFF" stroke-width="20" stroke-linecap="round" opacity="0.24"/>
+  <g filter="url(#softText)">
+    <text x="256" y="151" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, SF Pro Display, Helvetica Neue, Arial, sans-serif" font-size="102" font-weight="700" letter-spacing="0" fill="#FFFFFF">iOS</text>
+    <text x="256" y="392" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, SF Pro Display, Helvetica Neue, Arial, sans-serif" font-size="270" font-weight="800" letter-spacing="0" fill="#FFFFFF">27</text>
+  </g>
+</svg>

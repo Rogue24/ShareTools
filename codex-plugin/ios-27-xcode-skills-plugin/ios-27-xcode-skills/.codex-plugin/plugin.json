@@ -1,0 +1,39 @@
+{
+  "name": "ios-27-xcode-skills",
+  "version": "0.1.0+codex.20260610070423",
+  "description": "Apple Xcode beta skills for iOS 27 adaptation, SwiftUI migration, UIKit modernization, testing, devices, and security audits.",
+  "author": {
+    "name": "健了个平"
+  },
+  "license": "UNLICENSED",
+  "keywords": [
+    "ios27",
+    "xcode",
+    "swiftui",
+    "uikit",
+    "migration",
+    "testing",
+    "security"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "iOS 27 Xcode Skills",
+    "shortDescription": "Apple Xcode beta skills for iOS 27 app adaptation.",
+    "longDescription": "A local Codex plugin bundling Xcode-exported skills for iOS 27 and related 2027 platform work: SwiftUI API changes, UIKit modernization, test modernization, device interaction, C bounds safety, and Xcode security-setting audits.",
+    "developerName": "健了个平",
+    "category": "Productivity",
+    "capabilities": [
+      "Write",
+      "Review",
+      "Interactive"
+    ],
+    "defaultPrompt": [
+      "帮我适配 iOS 27 的 SwiftUI API 变化",
+      "审查这个项目的 Xcode 安全设置",
+      "现代化 UIKit 生命周期和测试代码"
+    ],
+    "brandColor": "#007AFF",
+    "composerIcon": "./assets/ios-27-xcode-skills-icon.svg",
+    "logo": "./assets/ios-27-xcode-skills-icon.svg"
+  }
+}
