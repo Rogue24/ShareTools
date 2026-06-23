@@ -4,7 +4,7 @@
 
 ## xcode-skills
 
-从 Xcode 27 导出的官方 Skills。
+从 Xcode 27 导出的官方 Skills：
 
 | 技能 | 用途 |
 |---|---|
