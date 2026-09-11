@@ -1,0 +1,19 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "ios-27-xcode-skills-marketplace",
+  "description": "Local marketplace for the iOS 27 Xcode Skills plugin.",
+  "owner": {
+    "name": "健了个平"
+  },
+  "plugins": [
+    {
+      "name": "ios-27-xcode-skills",
+      "description": "Apple Xcode beta skills for iOS 27 development and adaptation.",
+      "author": {
+        "name": "健了个平"
+      },
+      "category": "development",
+      "source": "./ios-27-xcode-skills"
+    }
+  ]
+}
