@@ -108,7 +108,7 @@ mkdir -p ~/.agents/plugins
 ```
 
 ```text
-现代化 UIKit 生命周期和测试代码
+让 UIKit 应用适配 iPhone Duo、分屏和动态窗口尺寸
 ```
 
 插件包含的主要能力：
@@ -117,7 +117,7 @@ mkdir -p ~/.agents/plugins
 - SwiftUI 代码最佳实践与性能审查
 - App Intents 通用最佳实践，以及 iOS 26 / 27 新 API 适配
 - SwiftUI 文档型应用构建与旧文档 API 迁移
-- UIKit 多窗口、Scene 生命周期、`UIScreen`、方向和 Safe Area 现代化
+- UIKit 动态窗口、多窗口、分屏、Stage Manager 与 iPhone Duo 适配，并现代化 Scene 生命周期、`UIScreen`、方向、设备类型和 Safe Area
 - XCTest 到 Swift Testing 的迁移与已有测试现代化
 - Xcode 安全构建设置、Enhanced Security 与 entitlements 审查
 - C `-fbounds-safety` 迁移与调试

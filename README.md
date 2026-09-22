@@ -17,7 +17,7 @@
 | [modernize-tests](skills/xcode-skills/modernize-tests/SKILL.md) | 把现有 XCTest 迁移到 Swift Testing，或使用现代模式改进已有测试，覆盖断言、异步确认、参数化、跳过条件、已知问题、并发和附件；XCUI 自动化与 XCTest 性能测试仍保留 XCTest。 |
 | [swiftui-specialist](skills/xcode-skills/swiftui-specialist/SKILL.md) | SwiftUI 通用最佳实践与性能指南。用于编写、重构和审查视图结构、数据流、Environment、Modifier、本地化、动画、`ForEach` / `List` 和软废弃 API。 |
 | [swiftui-whats-new-27](skills/xcode-skills/swiftui-whats-new-27/SKILL.md) | 处理 SDK 27 的 SwiftUI 新 API 和兼容性变化，包括 `@State` 宏、统一 `@ContentBuilder`、任意容器拖拽排序与侧滑操作、`AsyncImage` 缓存、工具栏和基于可选项绑定的弹窗。 |
-| [uikit-app-modernization](skills/xcode-skills/uikit-app-modernization/SKILL.md) | 现代化 UIKit 项目以适配多窗口和动态尺寸，重点替换 `UIScreen.main`、旧方向判断、AppDelegate 生命周期和不正确的 Safe Area 假设，支持 Swift 与 Objective-C。 |
+| [app-resizability](skills/xcode-skills/app-resizability/SKILL.md) | 让 UIKit 应用适配运行时窗口尺寸变化、多窗口、分屏、Stage Manager 和折叠屏 iPhone Duo；迁移 `UIScreen.main`、方向、设备类型、Scene 生命周期及 Safe Area 等旧式共享状态与布局假设，支持 Swift 与 Objective-C。 |
 
 ## ios-27-xcode-skills-plugin
 
@@ -120,7 +120,7 @@ mkdir -p ~/.agents/plugins
 ```
 
 ```text
-现代化 UIKit 生命周期和测试代码
+让 UIKit 应用适配 iPhone Duo、分屏和动态窗口尺寸
 ```
 
 当前 `xcode-skills` 包含的主要能力：
@@ -129,7 +129,7 @@ mkdir -p ~/.agents/plugins
 - SwiftUI 代码最佳实践与性能审查
 - App Intents 通用最佳实践，以及 iOS 26 / 27 新 API 适配
 - SwiftUI 文档型应用构建与旧文档 API 迁移
-- UIKit 多窗口、Scene 生命周期、`UIScreen`、方向和 Safe Area 现代化
+- UIKit 动态窗口、多窗口、分屏、Stage Manager 与 iPhone Duo 适配，并现代化 Scene 生命周期、`UIScreen`、方向、设备类型和 Safe Area
 - XCTest 到 Swift Testing 的迁移与已有测试现代化
 - Xcode 安全构建设置、Enhanced Security 与 entitlements 审查
 - C `-fbounds-safety` 迁移与调试
