@@ -124,5 +124,5 @@ claude plugin list | grep ios-27-xcode-skills
 ```
 
 ```text
-现代化 UIKit 生命周期和测试代码
+让 UIKit 应用适配 iPhone Duo、分屏和动态窗口尺寸
 ```

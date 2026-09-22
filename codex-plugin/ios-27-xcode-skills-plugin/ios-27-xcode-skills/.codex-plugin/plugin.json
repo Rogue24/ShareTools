@@ -1,9 +1,9 @@
 {
   "name": "ios-27-xcode-skills",
-  "version": "0.2.0+codex.20260911031249",
-  "description": "Apple Xcode beta skills for iOS 27 adaptation, SwiftUI and App Intents development, document apps, UIKit modernization, testing, device interaction, C bounds safety, and security audits.",
+  "version": "0.3.0+codex.20260922040229",
+  "description": "Apple Xcode beta skills for iOS 27 adaptation, SwiftUI and App Intents development, resizable and multi-window UIKit apps including iPhone Duo, document apps, testing, device interaction, C bounds safety, and security audits.",
   "author": {
-    "name": "健了个平"
+    "name": "\u5065\u4e86\u4e2a\u5e73"
   },
   "license": "UNLICENSED",
   "keywords": [
@@ -14,6 +14,8 @@
     "app-intents",
     "document-apps",
     "migration",
+    "app-resizability",
+    "iphone-duo",
     "testing",
     "bounds-safety",
     "security"
@@ -21,9 +23,9 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "iOS 27 Xcode Skills",
-    "shortDescription": "Apple Xcode beta skills for iOS 27 development and adaptation.",
-    "longDescription": "A local Codex plugin bundling Xcode-exported skills for iOS 27 and related 2027 platform work: SwiftUI and App Intents APIs, document-based apps, UIKit modernization, Swift Testing, device interaction, C bounds safety, and Xcode security-setting audits.",
-    "developerName": "健了个平",
+    "shortDescription": "Apple Xcode beta skills for iOS 27 development, adaptation, and resizable apps.",
+    "longDescription": "A local Codex plugin bundling Xcode-exported skills for iOS 27 and related 2027 platform work: SwiftUI and App Intents APIs, resizable and multi-window UIKit apps including split screen, Stage Manager, and iPhone Duo, document-based apps, Swift Testing, device interaction, C bounds safety, and Xcode security-setting audits.",
+    "developerName": "\u5065\u4e86\u4e2a\u5e73",
     "category": "Productivity",
     "capabilities": [
       "Write",
@@ -31,11 +33,11 @@
       "Interactive"
     ],
     "defaultPrompt": [
-      "帮我适配 iOS 27 的 SwiftUI API 变化",
-      "帮我使用 iOS 27 的 App Intents 新 API",
-      "迁移这个 SwiftUI 文档型应用",
-      "审查这个项目的 Xcode 安全设置",
-      "现代化 UIKit 生命周期和测试代码"
+      "\u5e2e\u6211\u9002\u914d iOS 27 \u7684 SwiftUI API \u53d8\u5316",
+      "\u5e2e\u6211\u4f7f\u7528 iOS 27 \u7684 App Intents \u65b0 API",
+      "\u8ba9\u8fd9\u4e2a UIKit \u5e94\u7528\u9002\u914d iPhone Duo\u3001\u5206\u5c4f\u548c\u52a8\u6001\u7a97\u53e3\u5c3a\u5bf8",
+      "\u8fc1\u79fb\u8fd9\u4e2a SwiftUI \u6587\u6863\u578b\u5e94\u7528",
+      "\u5ba1\u67e5\u8fd9\u4e2a\u9879\u76ee\u7684 Xcode \u5b89\u5168\u8bbe\u7f6e"
     ],
     "brandColor": "#007AFF",
     "composerIcon": "./assets/ios-27-xcode-skills-icon.svg",
