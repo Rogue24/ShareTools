@@ -16,6 +16,7 @@
 | `swiftui-specialist` | 提供 SwiftUI 最佳实践与性能指导。 |
 | `swiftui-whats-new-27` | 处理 SDK 27 SwiftUI 新 API 和兼容性变化。 |
 | `app-resizability` | 适配动态窗口、多窗口、分屏、Stage Manager 和折叠屏 iPhone Duo，并现代化相关 UIKit API。 |
+| `xctrace` | 使用 `xctrace` 做性能剖析、优化与卡顿排查。 |
 
 ## 使用方式
 
@@ -35,6 +36,10 @@
 
 ```text
 /ios-27-xcode-skills:app-resizability
+```
+
+```text
+/ios-27-xcode-skills:xctrace
 ```
 
 也可以直接描述需求，例如：

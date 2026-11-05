@@ -1,14 +1,14 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "ios-27-xcode-skills-marketplace",
-  "description": "Local marketplace for the iOS 27 Xcode Skills plugin, including SwiftUI, App Intents, and resizable UIKit app guidance.",
+  "description": "Local marketplace for the iOS 27 Xcode Skills plugin, including SwiftUI, App Intents, resizable UIKit app guidance, and xctrace performance profiling.",
   "owner": {
     "name": "健了个平"
   },
   "plugins": [
     {
       "name": "ios-27-xcode-skills",
-      "description": "Apple Xcode beta skills for iOS 27 development, adaptation, and resizable UIKit apps including iPhone Duo.",
+      "description": "Apple Xcode beta skills for iOS 27 development, adaptation, resizable UIKit apps including iPhone Duo, and xctrace performance profiling.",
       "author": {
         "name": "健了个平"
       },

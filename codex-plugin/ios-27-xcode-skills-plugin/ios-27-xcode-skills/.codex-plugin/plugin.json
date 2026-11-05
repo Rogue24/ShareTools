@@ -1,7 +1,7 @@
 {
   "name": "ios-27-xcode-skills",
-  "version": "0.3.0+codex.20260922040229",
-  "description": "Apple Xcode beta skills for iOS 27 adaptation, SwiftUI and App Intents development, resizable and multi-window UIKit apps including iPhone Duo, document apps, testing, device interaction, C bounds safety, and security audits.",
+  "version": "0.4.0+codex.20261105235048",
+  "description": "Apple Xcode beta skills for iOS 27 adaptation, SwiftUI and App Intents development, resizable and multi-window UIKit apps including iPhone Duo, document apps, testing, device interaction, C bounds safety, security audits, and xctrace performance profiling.",
   "author": {
     "name": "\u5065\u4e86\u4e2a\u5e73"
   },
@@ -18,13 +18,15 @@
     "iphone-duo",
     "testing",
     "bounds-safety",
-    "security"
+    "security",
+    "xctrace",
+    "profiling"
   ],
   "skills": "./skills/",
   "interface": {
     "displayName": "iOS 27 Xcode Skills",
     "shortDescription": "Apple Xcode beta skills for iOS 27 development, adaptation, and resizable apps.",
-    "longDescription": "A local Codex plugin bundling Xcode-exported skills for iOS 27 and related 2027 platform work: SwiftUI and App Intents APIs, resizable and multi-window UIKit apps including split screen, Stage Manager, and iPhone Duo, document-based apps, Swift Testing, device interaction, C bounds safety, and Xcode security-setting audits.",
+    "longDescription": "A local Codex plugin bundling Xcode-exported skills for iOS 27 and related 2027 platform work: SwiftUI and App Intents APIs, resizable and multi-window UIKit apps including split screen, Stage Manager, and iPhone Duo, document-based apps, Swift Testing, device interaction, C bounds safety, Xcode security-setting audits, and xctrace-based performance profiling.",
     "developerName": "\u5065\u4e86\u4e2a\u5e73",
     "category": "Productivity",
     "capabilities": [

@@ -1,7 +1,7 @@
 {
   "name": "ios-27-xcode-skills",
-  "version": "1.1.0",
-  "description": "Apple Xcode beta skills for iOS 27 development, covering SwiftUI, App Intents, resizable and multi-window UIKit apps including iPhone Duo, document apps, Swift Testing, device interaction, C bounds safety, and security audits.",
+  "version": "1.2.0",
+  "description": "Apple Xcode beta skills for iOS 27 development, covering SwiftUI, App Intents, resizable and multi-window UIKit apps including iPhone Duo, document apps, Swift Testing, device interaction, C bounds safety, security audits, and xctrace performance profiling.",
   "author": {
     "name": "健了个平"
   },
@@ -17,6 +17,8 @@
     "iphone-duo",
     "testing",
     "bounds-safety",
-    "security"
+    "security",
+    "xctrace",
+    "profiling"
   ]
 }

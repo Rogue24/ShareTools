@@ -18,15 +18,16 @@
 | [swiftui-specialist](skills/xcode-skills/swiftui-specialist/SKILL.md) | SwiftUI 通用最佳实践与性能指南。用于编写、重构和审查视图结构、数据流、Environment、Modifier、本地化、动画、`ForEach` / `List` 和软废弃 API。 |
 | [swiftui-whats-new-27](skills/xcode-skills/swiftui-whats-new-27/SKILL.md) | 处理 SDK 27 的 SwiftUI 新 API 和兼容性变化，包括 `@State` 宏、统一 `@ContentBuilder`、任意容器拖拽排序与侧滑操作、`AsyncImage` 缓存、工具栏和基于可选项绑定的弹窗。 |
 | [app-resizability](skills/xcode-skills/app-resizability/SKILL.md) | 让 UIKit 应用适配运行时窗口尺寸变化、多窗口、分屏、Stage Manager 和折叠屏 iPhone Duo；迁移 `UIScreen.main`、方向、设备类型、Scene 生命周期及 Safe Area 等旧式共享状态与布局假设，支持 Swift 与 Objective-C。 |
+| [xctrace](skills/xcode-skills/xctrace/SKILL.md) | 使用 Apple 的 `xctrace`（Instruments 命令行接口）做性能剖析与优化，例如排查应用变慢、CPU / 内存占用过高或界面卡死，并支持从命令行捕获、读取 `.trace` / `.atrc` 文件，包含卡顿分级诊断等。 |
 
 ## ios-27-xcode-skills-plugin
 
-这是基于 `xcode-skills` 中的 10 个 skills 资源封装而成的 Codex 个人插件包，把里面的技能内容整理为 Codex 插件规范所需的目录结构，并补充插件元信息与展示资源，方便在 Codex 插件页中安装、启用和分享。插件内容与 `skills/xcode-skills` 保持同步。
+这是基于 `xcode-skills` 中的 11 个 skills 资源封装而成的 Codex 个人插件包，把里面的技能内容整理为 Codex 插件规范所需的目录结构，并补充插件元信息与展示资源，方便在 Codex 插件页中安装、启用和分享。插件内容与 `skills/xcode-skills` 保持同步。
 
 包内关键结构：
 
 - `.codex-plugin/plugin.json`：Codex 插件 manifest，声明插件名称、版本、展示信息、图标、默认提示词，以及 skills 入口。
-- `skills/`：与 `skills/xcode-skills` 同步的 10 个技能，包含 iOS 27 / Xcode beta 适配相关的 skill 定义、工作流、参考资料和辅助脚本。
+- `skills/`：与 `skills/xcode-skills` 同步的 11 个技能，包含 iOS 27 / Xcode beta 适配相关的 skill 定义、工作流、参考资料和辅助脚本。
 - `assets/`：插件展示资源，例如 `logo` / `composerIcon` 使用的图标文件。
 
 安装完成后，它会作为 `ios-27-xcode-skills@personal` 出现在 Codex 的个人插件中。
@@ -134,18 +135,19 @@ mkdir -p ~/.agents/plugins
 - Xcode 安全构建设置、Enhanced Security 与 entitlements 审查
 - C `-fbounds-safety` 迁移与调试
 - iOS、watchOS 和 tvOS 真机/模拟器 UI 行为验证
+- `xctrace` 性能剖析与卡顿排查（Instruments 命令行）
 
 完整安装说明见 [Codex 插件安装文档](codex-plugin/ios-27-xcode-skills-plugin/INSTALL.md)。
 
 ## ios-27-xcode-skills Claude Code 插件
 
-这是基于同一套 `xcode-skills` 资源封装的 Claude Code 插件包，包含 10 个技能和一个本地 marketplace 清单。安装后，Claude Code 会根据任务内容自动使用匹配技能，也可以通过 `ios-27-xcode-skills` 命名空间显式调用。
+这是基于同一套 `xcode-skills` 资源封装的 Claude Code 插件包，包含 11 个技能和一个本地 marketplace 清单。安装后，Claude Code 会根据任务内容自动使用匹配技能，也可以通过 `ios-27-xcode-skills` 命名空间显式调用。
 
 包内关键结构：
 
 - `.claude-plugin/marketplace.json`：本地 marketplace 清单，用于注册和持久安装插件。
 - `ios-27-xcode-skills/.claude-plugin/plugin.json`：Claude Code 插件 manifest。
-- `ios-27-xcode-skills/skills/`：与 `skills/xcode-skills` 完全同步的 10 个技能。
+- `ios-27-xcode-skills/skills/`：与 `skills/xcode-skills` 完全同步的 11 个技能。
 - `INSTALL.md`：临时加载、本地 marketplace 安装和验证说明。
 
 ### 临时加载

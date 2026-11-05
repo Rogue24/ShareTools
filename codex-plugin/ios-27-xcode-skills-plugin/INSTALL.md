@@ -7,7 +7,7 @@
 包内关键结构：
 
 - `.codex-plugin/plugin.json`：Codex 插件 manifest，声明插件名称、版本、展示信息、图标、默认提示词和 skills 入口。
-- `skills/`：与仓库 `skills/xcode-skills` 同步的技能主体，包含 10 个 skill 定义、工作流、参考资料和辅助脚本。
+- `skills/`：与仓库 `skills/xcode-skills` 同步的技能主体，包含 11 个 skill 定义、工作流、参考资料和辅助脚本。
 - `assets/`：插件展示资源，例如 `logo` / `composerIcon` 使用的图标文件。
 
 安装完成后，它会作为 `ios-27-xcode-skills@personal` 出现在 Codex 的个人插件中。
@@ -122,3 +122,4 @@ mkdir -p ~/.agents/plugins
 - Xcode 安全构建设置、Enhanced Security 与 entitlements 审查
 - C `-fbounds-safety` 迁移与调试
 - iOS、watchOS 和 tvOS 真机/模拟器 UI 行为验证
+- `xctrace` 性能剖析与卡顿排查（Instruments 命令行）

@@ -126,3 +126,7 @@ claude plugin list | grep ios-27-xcode-skills
 ```text
 让 UIKit 应用适配 iPhone Duo、分屏和动态窗口尺寸
 ```
+
+```text
+用 xctrace 排查应用卡顿和性能问题
+```
